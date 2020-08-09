@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- CardView -->
+    <!-- Frame -->
     <dimen name="frame_width">200dp</dimen>
 
     <!-- Wrapper -->
     <dimen name="wrapper_top_radius">10dp</dimen>
+    <dimen name="wrapper_height">360dp</dimen>
 
     <!-- CardView -->
     <dimen name="cardview_width">100dp</dimen>

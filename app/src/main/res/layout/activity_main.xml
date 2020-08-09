@@ -58,8 +58,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView_1"
             style="@style/cardView"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_4"
+            app:layout_constraintEnd_toStartOf="@+id/cardView_2"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -78,26 +79,27 @@
             android:id="@+id/cardView_2"
             style="@style/cardView"
             app:layout_constraintEnd_toStartOf="@+id/cardView_3"
-            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/cardView_1"
             app:layout_constraintTop_toTopOf="@+id/cardView_1">
 
             <ImageView
                 android:id="@+id/imageView_2"
                 style="@style/ImageStyle"
-                android:contentDescription="@string/part_of_the_image"/>
+                android:contentDescription="@string/part_of_the_image" />
 
             <CheckBox
                 android:id="@+id/checkbox_2"
-                style="@style/checkBoxStyle"/>
+                style="@style/checkBoxStyle" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView_3"
             style="@style/cardView"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cardView_2"
             app:layout_constraintTop_toTopOf="@+id/cardView_2">
 
             <ImageView
@@ -114,7 +116,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView_4"
             style="@style/cardView"
-            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_7"
             app:layout_constraintStart_toStartOf="@+id/cardView_1"
             app:layout_constraintTop_toBottomOf="@+id/cardView_1">
 
@@ -139,11 +141,11 @@
             <ImageView
                 android:id="@+id/imageView_5"
                 style="@style/ImageStyle"
-                android:contentDescription="@string/part_of_the_image"/>
+                android:contentDescription="@string/part_of_the_image" />
 
             <CheckBox
                 android:id="@+id/checkbox_5"
-                style="@style/checkBoxStyle"/>
+                style="@style/checkBoxStyle" />
 
         </androidx.cardview.widget.CardView>
 
@@ -156,19 +158,17 @@
             <ImageView
                 android:id="@+id/imageView_6"
                 style="@style/ImageStyle"
-                android:contentDescription="@string/part_of_the_image"/>
+                android:contentDescription="@string/part_of_the_image" />
 
             <CheckBox
                 android:id="@+id/checkbox_6"
-                style="@style/checkBoxStyle"/>
+                style="@style/checkBoxStyle" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView_7"
             style="@style/cardView"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/cardView_4"
             app:layout_constraintTop_toBottomOf="@+id/cardView_4">
